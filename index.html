@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            background-size: 2700px 1800px;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 15px;
+        }
+        .mid{
+            display: block;
+            width: 40%;
+            margin: 29px auto;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 25px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 17px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-size: 20px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+        img{
+            width: 100px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height: 10px;
+            font-size: 18px;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;  /*default settings of chrome tells us that default test color of button is black*/
+            padding: 7px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            border: 3px solid white;
+            margin: 100px 50px;
+            padding: 75px 75px;
+            width: 35%;
+            border-radius: 20px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 74%;
+            margin: 3px auto;
+            padding: 1px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .container button{
+            display: block;
+            width: 74%;
+            margin: 2px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gym.jpg" alt="">
+            <div>Yash Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym of Ajmer Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Gender">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
